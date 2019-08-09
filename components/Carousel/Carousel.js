@@ -38,7 +38,6 @@ function Carousel(photos) {
 
 
   photos.forEach(item => {
-    photo.src = item;
     carousel.append(photo);
   });
 
@@ -47,6 +46,7 @@ function Carousel(photos) {
   carousel.append(rightButton);
 
   let currentIndex = 0;
+  photo.src = photos[currentIndex];
 
   // Events
   leftButton.addEventListener('click', event => {
