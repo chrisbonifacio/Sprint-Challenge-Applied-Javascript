@@ -22,6 +22,9 @@ axios
         data.topics.forEach(item => {
             topics.append(Tab(item));
         })
+    })
+    .catch(err => {
+        console.log(err);
     });
 
 function Tab(topic) {
