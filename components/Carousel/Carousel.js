@@ -50,14 +50,12 @@ function Carousel(photos) {
 
   // Events
   leftButton.addEventListener('click', event => {
-    currentIndex -= 1;
-    photo.src = photos[currentIndex];
+    photo.src = photos[currentIndex -= 1];
     photo.style.display = "block";
   });
 
   rightButton.addEventListener('click', event => {
-    currentIndex += 1;
-    photo.src = photos[currentIndex];
+    photo.src = photos[currentIndex += 1];
     photo.style.display = "block";
   });
 
